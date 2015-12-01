@@ -1,0 +1,82 @@
+*textobj-samechars.txt*	Text objects for continuous characters.	    *textobj-samechars*
+
+Version: 0.0.1
+Author : tkhren <m.tkhren@gmail.com>
+License: So-called MIT/X license  {{{
+    Permission is hereby granted, free of charge, to any person obtaining
+    a copy of this software and associated documentation files (the
+    "Software"), to deal in the Software without restriction, including
+    without limitation the rights to use, copy, modify, merge, publish,
+    distribute, sublicense, and/or sell copies of the Software, and to
+    permit persons to whom the Software is furnished to do so, subject to
+    the following conditions:
+
+    The above copyright notice and this permission notice shall be included
+    in all copies or substantial portions of the Software.
+
+    THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS
+    OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+    MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
+    IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY
+    CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,
+    TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
+    SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+}}}
+
+==============================================================================
+CONTENTS					    *textobj-samechars-contents*
+
+INTRODUCTION			|textobj-samechars-introduction|
+INTERFACE			|textobj-samechars-interface|
+KEY MAPPINGS			|textobj-samechars-key-mappings|
+CUSTOMIZING			|textobj-samechars-customizing|
+EXAMPLE				|textobj-samechars-example|
+CHANGELOG			|textobj-samechars-changelog|
+
+
+==============================================================================
+INTRODUCTION					*textobj-samechars-introduction*
+
+textobj-samechars is a Vim plugin to provide text objects to select continuous
+characters.
+
+Requirements:
+- |textobj-user| by kana
+  <http://www.vim.org/scripts/script.php?script_id=2100>
+  <https://github.com/kana/vim-textobj-user>
+
+Latest version:
+https://github.com/tkhren/vim-textobj-samechars
+
+==============================================================================
+INTERFACE					*textobj-samechars-interface*
+
+------------------------------------------------------------------------------
+KEY MAPPINGS					*textobj-samechars-key-mappings*
+
+These key mappings are defined in Visual mode and Operator-pending mode.
+
+<Plug>(textobj-samechars-a)			*<Plug>(textobj-samechars-a)*
+<Plug>(textobj-samechars-i)			*<Plug>(textobj-samechars-i)*
+			Select the continuous characters under the cursor.
+
+
+==============================================================================
+EXAMPLE						    *textobj-samechars-example*
+
+This text object selects continuous characters. (`|` is the cursor)
+>
+        Goooooooooooo|ooooooooooogle
+<
+Type `dic` (means "delete continuous")
+>
+        G|gle
+<
+==============================================================================
+CHANGELOG					    *textobj-samechars-changelog*
+
+0.0.1	2015-12-1
+	- Initial version.
+
+==============================================================================
+vim:tw=78:ts=8:ft=help:norl:fen:fdl=0:fdm=marker:
